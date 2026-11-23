@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Farbprobe — Corporate Design der THM</title>
+<style>
+  :root {
+    --thm-gruen: #80BA24;
+    --thm-grau: #4A5C66;
+    --thm-rot: #9C132E;
+    --thm-gelb: #F4AA00;
+    --thm-hellblau: #00B8E4;
+    --thm-blau: #002878;
+    --weiss: #FFFFFF;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    background: var(--weiss);
+    color: var(--thm-grau);
+    font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  header {
+    border-bottom: 4px solid var(--thm-gruen);
+    padding: 1.5rem 1.25rem 1.25rem;
+  }
+
+  header .kopf {
+    max-width: 60rem;
+    margin: 0 auto;
+  }
+
+  header .marke {
+    display: inline-block;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--thm-grau);
+    border-left: 6px solid var(--thm-gruen);
+    padding-left: 0.6rem;
+  }
+
+  h1 {
+    margin: 0.6rem 0 0;
+    font-size: 2rem;
+    line-height: 1.25;
+    color: var(--thm-grau);
+  }
+
+  main {
+    max-width: 60rem;
+    margin: 0 auto;
+    padding: 2rem 1.25rem 3rem;
+  }
+
+  h2 {
+    margin: 0 0 0.5rem;
+    font-size: 1.25rem;
+    color: var(--thm-blau);
+  }
+
+  h2::after {
+    content: "";
+    display: block;
+    width: 3rem;
+    height: 3px;
+    margin-top: 0.4rem;
+    background: var(--thm-gruen);
+  }
+
+  p {
+    margin: 0.9rem 0;
+  }
+
+  a {
+    color: var(--thm-blau);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+
+  a:hover,
+  a:focus {
+    color: var(--thm-grau);
+    text-decoration-thickness: 2px;
+  }
+
+  .hinweis {
+    border-left: 4px solid var(--thm-gelb);
+    padding: 0.75rem 1rem;
+    margin: 1.5rem 0;
+    background: var(--weiss);
+  }
+
+  .hinweis strong {
+    color: var(--thm-rot);
+  }
+
+  .aktionen {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin: 1.5rem 0 2.5rem;
+  }
+
+  .schaltflaeche {
+    display: inline-block;
+    font: inherit;
+    font-weight: 600;
+    padding: 0.6rem 1.4rem;
+    border-radius: 3px;
+    border: 2px solid var(--thm-blau);
+    background: var(--thm-blau);
+    color: var(--weiss);
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  .schaltflaeche:hover,
+  .schaltflaeche:focus {
+    background: var(--thm-grau);
+    border-color: var(--thm-grau);
+    color: var(--weiss);
+  }
+
+  .schaltflaeche.zweit {
+    background: var(--weiss);
+    border-color: var(--thm-gruen);
+    color: var(--thm-grau);
+  }
+
+  .schaltflaeche.zweit:hover,
+  .schaltflaeche.zweit:focus {
+    background: var(--thm-gruen);
+    border-color: var(--thm-gruen);
+    color: var(--weiss);
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    font-size: 0.95rem;
+  }
+
+  caption {
+    caption-side: top;
+    text-align: left;
+    padding-bottom: 0.6rem;
+    font-weight: 600;
+    color: var(--thm-grau);
+  }
+
+  th,
+  td {
+    text-align: left;
+    padding: 0.6rem 0.75rem;
+    border-bottom: 1px solid var(--thm-grau);
+    vertical-align: middle;
+  }
+
+  thead th {
+    background: var(--thm-grau);
+    color: var(--weiss);
+    border-bottom: 2px solid var(--thm-grau);
+  }
+
+  tbody th {
+    font-weight: 600;
+  }
+
+  tbody tr.hauptfarbe th {
+    border-left: 4px solid var(--thm-gruen);
+  }
+
+  .probe {
+    display: block;
+    width: 4.5rem;
+    height: 1.4rem;
+    border: 1px solid var(--thm-grau);
+  }
+
+  code {
+    font-family: Consolas, "Courier New", monospace;
+    color: var(--thm-grau);
+  }
+
+  footer {
+    border-top: 2px solid var(--thm-grau);
+    padding: 1rem 1.25rem 2rem;
+    font-size: 0.85rem;
+  }
+
+  footer .kopf {
+    max-width: 60rem;
+    margin: 0 auto;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="kopf">
+    <span class="marke">Technische Hochschule Mittelhessen</span>
+    <h1>Farbprobe im Corporate Design</h1>
+  </div>
+</header>
+
+<main>
+  <h2>Eine Seite, sechs Farben</h2>
+  <p>
+    Diese Seite prüft das Corporate Design der THM an den Elementen, die in
+    Dokumenten am häufigsten vorkommen: Überschrift, Fließtext, Link,
+    Schaltfläche und Tabelle. Fließtext steht in THM Grau auf Weiß, Akzente
+    setzt THM Grün. Die Sekundärfarben erscheinen nur dort, wo sie eine
+    Information hervorheben.
+  </p>
+
+  <p>
+    Weiterführende Angaben stehen auf der
+    <a href="https://www.thm.de">Website der THM</a>.
+  </p>
+
+  <div class="hinweis">
+    <strong>Achtung:</strong> THM Grün hat auf Weiß zu wenig Kontrast und
+    wird deshalb nie für Fließtext verwendet, sondern nur für Linien,
+    Rahmen und Flächen.
+  </div>
+
+  <div class="aktionen">
+    <button type="button" class="schaltflaeche">Primäre Schaltfläche</button>
+    <button type="button" class="schaltflaeche zweit">Sekundäre Schaltfläche</button>
+  </div>
+
+  <h2>Die Farben im Überblick</h2>
+  <table>
+    <caption>Offizielle Farben der THM mit Hex-Wert und Rolle</caption>
+    <thead>
+      <tr>
+        <th scope="col">Farbe</th>
+        <th scope="col">Probe</th>
+        <th scope="col">Hex-Wert</th>
+        <th scope="col">RGB</th>
+        <th scope="col">Rolle</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="hauptfarbe">
+        <th scope="row">THM Grün</th>
+        <td><span class="probe" style="background: var(--thm-gruen)"></span></td>
+        <td><code>#80BA24</code></td>
+        <td>128, 186, 36</td>
+        <td>Hauptfarbe</td>
+      </tr>
+      <tr class="hauptfarbe">
+        <th scope="row">THM Grau</th>
+        <td><span class="probe" style="background: var(--thm-grau)"></span></td>
+        <td><code>#4A5C66</code></td>
+        <td>74, 92, 102</td>
+        <td>Hauptfarbe</td>
+      </tr>
+      <tr>
+        <th scope="row">THM Rot</th>
+        <td><span class="probe" style="background: var(--thm-rot)"></span></td>
+        <td><code>#9C132E</code></td>
+        <td>156, 19, 46</td>
+        <td>Sekundärfarbe</td>
+      </tr>
+      <tr>
+        <th scope="row">THM Gelb</th>
+        <td><span class="probe" style="background: var(--thm-gelb)"></span></td>
+        <td><code>#F4AA00</code></td>
+        <td>244, 170, 0</td>
+        <td>Sekundärfarbe</td>
+      </tr>
+      <tr>
+        <th scope="row">THM Hellblau</th>
+        <td><span class="probe" style="background: var(--thm-hellblau)"></span></td>
+        <td><code>#00B8E4</code></td>
+        <td>0, 184, 228</td>
+        <td>Sekundärfarbe</td>
+      </tr>
+      <tr>
+        <th scope="row">THM Blau</th>
+        <td><span class="probe" style="background: var(--thm-blau)"></span></td>
+        <td><code>#002878</code></td>
+        <td>0, 40, 120</td>
+        <td>Sekundärfarbe</td>
+      </tr>
+    </tbody>
+  </table>
+</main>
+
+<footer>
+  <div class="kopf">
+    Farbprobe zum Skill <code>thm-cd</code> — Übung 5, Softwaretechnik.
+  </div>
+</footer>
+
+</body>
+</html>
